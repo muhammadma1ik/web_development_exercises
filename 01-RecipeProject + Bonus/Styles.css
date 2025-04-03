@@ -1,0 +1,45 @@
+/* Basic reset and styling for the body */
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  /* Styling for the main heading */
+  h1 {
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Styling for subheadings */
+  h2 {
+    color: #4CAF50;
+    margin-top: 20px;
+  }
+  
+  /* Styling for paragraphs */
+  p {
+    line-height: 1.6;
+  }
+  
+  /* Styling for lists */
+  ul, ol {
+    margin: 10px 0;
+    padding-left: 20px;
+  }
+  
+  /* Styling for code blocks */
+  pre {
+    background-color: #eaeaea;
+    padding: 10px;
+    overflow-x: auto;
+  }
+  
+  /* Styling for inlined code elements */
+  code {
+    background-color: #eaeaea;
+    padding: 2px 4px;
+    border-radius: 4px;
+  }
+  
