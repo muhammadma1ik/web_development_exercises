@@ -1,0 +1,167 @@
+/*--------------------------------------------------------------
+   Global Styles and Reset
+--------------------------------------------------------------*/
+
+/* Reset default margin, padding and apply border-box model globally */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  /* Use auto height to let content define page length */
+  height: auto;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: Arial, sans-serif;
+}
+
+/*--------------------------------------------------------------
+   Body Base Styling
+--------------------------------------------------------------*/
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+/*--------------------------------------------------------------
+   Header Section
+--------------------------------------------------------------*/
+
+/* Header: Contains title and navigation, centered and padded */
+header {
+  background-color: #17072b;
+  color: #ffffff;
+  text-align: center;
+  padding: 2.5rem;
+}
+
+.logo-title h1 {
+  font-family: Tahoma, sans-serif;
+  font-weight: 700;
+  display: inline-block;
+  margin: 0;
+  border-bottom: 3px solid #ffffff;
+  padding-bottom: 0.4rem;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+
+/* Navigation Menu: Centered, inline list with spacing */
+nav ul {
+  list-style: none;
+  display: inline-block;
+}
+
+nav li {
+  display: inline;
+  margin: 0 1.5rem;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+/*--------------------------------------------------------------
+   Main Content Area
+--------------------------------------------------------------*/
+
+main {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2.5rem;
+}
+
+/*--------------------------------------------------------------
+   Welcome Section
+--------------------------------------------------------------*/
+
+.welcome-section {
+  flex: 2;
+  padding: 1.5rem;
+  min-width: 300px;
+}
+
+.welcome-section h2 {
+  font-family: Tahoma, sans-serif;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  font-size: 2.5rem;
+  text-decoration: underline;
+}
+
+.welcome-section p {
+  margin-bottom: 1.8rem;
+  font-size: 1.4rem;
+}
+
+.welcome-image img {
+  width: 100%;
+  height: 420px;  
+  object-fit: cover;
+  display: block;
+}
+
+/*--------------------------------------------------------------
+   Sidebar / Line Up Section
+--------------------------------------------------------------*/
+
+.lineup-section {
+  flex: 1;
+  background-color: #172d67;
+  color: #ffffff;
+  padding: 1.8rem;
+  min-width: 280px;
+}
+
+.lineup-section h3 {
+  font-family: Tahoma, sans-serif;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
+  text-decoration: underline;
+}
+
+.lineup-section ul {
+  list-style-type: disc;
+  padding-left: 2.5rem;
+  margin-bottom: 1.8rem;
+  font-size: 1.4rem;
+  line-height: 2.2;
+}
+
+/*--------------------------------------------------------------
+   Image Grid in Sidebar
+--------------------------------------------------------------*/
+
+.image-grid {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.image-grid img {
+  width: 240px;
+  height: auto;
+}
+
+/*--------------------------------------------------------------
+   Footer Section
+--------------------------------------------------------------*/
+
+footer {
+  background-color: #8c15e9;
+  color: #ffffff;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 1.4rem;
+}
