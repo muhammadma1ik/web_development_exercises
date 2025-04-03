@@ -1,0 +1,53 @@
+/* Applying a CSS filter to all images for a unified appearance */
+img {
+    filter: grayscale(25%) contrast(100%);
+  }
+  
+  /* General page styling */
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #eaebec;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  /* Figure styling */
+  figure {
+    display: inline-block;
+    margin: 20px;
+  }
+  
+  /* Caption styling */
+  figcaption {
+    font-size: 0.9em;
+    img {
+      filter: grayscale(50%) contrast(120%);
+    }
+    
+    /* General page styling */
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f0f8ff;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    /* Figure styling */
+    figure {
+      display: inline-block;
+      margin: 20px;
+    }
+    
+    /* Caption styling */
+    figcaption {
+      font-size: 0.9em;
+      color: #555;
+      margin-top: 10px;
+    }
+    
+    color: #555;
+    margin-top: 10px;
+  }
+  
