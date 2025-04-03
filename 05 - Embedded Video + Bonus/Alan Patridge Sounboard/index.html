@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced Sampler</title>
+
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <main>
+    <h1>Advanced Sampler</h1>
+
+    <!-- Container for two columns: TTS on the left, sampler on the right -->
+    <section class="container">
+      <!-- Left Column: Text-to-Speech Feature -->
+      <aside class="text-to-speech-container">
+        <label for="tts-input" class="sr-only">Text to Speech</label>
+        <textarea
+          id="tts-input"
+          class="tts-input"
+          placeholder="Type Here"
+          rows="10"
+        ></textarea>
+        <button id="tts-button" class="tts-button">Say it</button>
+      </aside>
+
+      <!-- Right Column: Audio Sampler -->
+      <section class="audio-sampler-container">
+        <div class="pagination">
+          <!-- Left arrow button (hidden on first page) -->
+          <button id="prev-page" class="page-arrow">&larr;</button>
+          <span id="page-info" class="page-info"></span>
+          <!-- Right arrow button (hidden on last page) -->
+          <button id="next-page" class="page-arrow">&rarr;</button>
+        </div>
+
+        <!-- The grid for audio samples -->
+        <div id="audio-grid" class="audio-grid">
+          <!--
+            Audio buttons will be  rendered here by JS.
+            Each will display:
+              - Sample name
+              - Sample length
+              - Play on click
+          -->
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <!-- Link to external JS -->
+  <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+/* Reset & Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    /* This allows scrolling if content is taller than the viewport */
+    overflow-y: auto;
+    min-height: 100vh;
+  }
+  
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Page Title */
+  main h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+  }
+  
+  /* Two-column container:
+     1) Text-to-speech aside
+     2) Audio sampler section
+  */
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+  }
+  
+  /* Text-to-Speech Column */
+  .text-to-speech-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .tts-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    resize: none;
+    margin-bottom: 10px;
+  }
+  
+  .tts-button {
+    background-color: #222;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .tts-button:hover {
+    background-color: #444;
+  }
+  
+  /* Hidden label for screen readers */
+  .sr-only {
+    position: absolute !important;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+  
+  /* Audio Sampler Container */
+  .audio-sampler-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Pagination area */
+  .pagination {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .page-arrow {
+    background-color: #222;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .page-arrow:hover {
+    background-color: #444;
+  }
+  
+  /* Page info text (e.g., "Sample Bank 1", "Sample Bank 2") */
+  .page-info {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  /* Audio Grid */
+  .audio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+  }
+  
+  /* Audio Button styling */
+  .audio-button {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+    position: relative;
+    min-height: 100px; /* to accommodate sample length text */
+  }
+  
+  /* Hover effect for audio button */
+  .audio-button:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Sample name styling */
+  .sample-name {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+  }
+  
+  /* Sample length styling */
+  .sample-length {
+    font-size: 0.9em;
+    color: #666;
+  }
+  
+  /* Responsive layout for smaller screens */
+  @media (max-width: 768px) {
+    .container {
+      grid-template-columns: 1fr;
+    }
+  
+    .audio-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .audio-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  body {
+    background-image: url('background.jpg');
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-attachment: fixed; /* Keeps background static when scrolling */
+}
