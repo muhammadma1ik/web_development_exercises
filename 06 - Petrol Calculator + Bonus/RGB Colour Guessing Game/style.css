@@ -1,0 +1,68 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the game */
+.container {
+    width: 80%;
+    max-width: 500px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* RGB display text */
+.rgb-display {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Color options grid */
+.color-options {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+/* Each color option */
+.color-option {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+/* Hover effect for color options */
+.color-option:hover {
+    transform: scale(1.1);
+}
+
+/* Feedback text */
+#feedback {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Restart button */
+#restart {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Restart button hidden by default */
+.hidden {
+    display: none;
+}
