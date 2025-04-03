@@ -1,0 +1,125 @@
+/* -------------------------------
+   Global Styles
+------------------------------- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* -------------------------------
+     Banner Image
+  ------------------------------- */
+  .banner-image {
+    display: block;
+    /* Centers the image horizontally */
+    margin: 0 auto;
+    /* Ensures the banner scales for smaller screens */
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* -------------------------------
+     Title & Divider
+  ------------------------------- */
+  .title {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .title-divider {
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+  }
+  
+  /* -------------------------------
+     Navigation Bar
+  ------------------------------- */
+  .navbar {
+    background: #333;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+  }
+  
+  .navbar a {
+    color: #f4f4f4;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .navbar a:hover {
+    background: #575757;
+  }
+  
+  /* -------------------------------
+     Section Styling
+  ------------------------------- */
+  .section {
+    background: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .section-title {
+    margin-top: 0;
+    color: #444;
+  }
+  
+  .content {
+    margin: 0;
+  }
+  
+  /* -------------------------------
+     Button Styling
+  ------------------------------- */
+  .button {
+    background: #007BFF;
+    color: #fff;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+  }
+  
+  .button:hover {
+    background: #0056b3;
+  }
+  
+
+  /* -------------------------------
+   Watch Box Styles
+------------------------------- */
+.watch-box {
+  background: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 5px;
+  text-align: center; /* Centers text and inline elements */
+}
+
+/* Centering the Button */
+.watch-box .button {
+  display: inline-block;
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px; /* Adds spacing above the button */
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+}
+
+.watch-box .button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
